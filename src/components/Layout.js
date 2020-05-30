@@ -5,6 +5,13 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import styled from "styled-components"
+
+const MyBox = styled.div`
+background: pink;
+padding: 10px;
+color: white;
+`
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -50,6 +57,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
+      <MyBox>Text inside my box</MyBox>
       <Footer />
     </div>
   )
