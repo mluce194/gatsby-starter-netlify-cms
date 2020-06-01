@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Avocat Thonon Les Bains - Paul-Marie Beraudo',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Paul-Marie Beraudo est un avocat inscrit au Barreau de Thonon-les-Bains, en Haute-Savoie.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
