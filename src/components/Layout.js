@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Logo from '../components/Logo'
 import LanguageSwitch from '../components/LanguageSwitch'
+import Slider from '../components/Slider'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
@@ -58,10 +59,11 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <div className="container container--flex">
-        <Logo></Logo>
-        <LanguageSwitch></LanguageSwitch>
+        <Logo />
+        <LanguageSwitch />
       </div>
       <Navbar />
+      <Slider />
       <div>{children}</div>
       <MyBox>Text inside my box</MyBox>
       <Footer />
