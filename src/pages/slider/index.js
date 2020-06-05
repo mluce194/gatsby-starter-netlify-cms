@@ -7,15 +7,18 @@ export default function Slider() {
     query {
         file(relativePath: {eq: "slider1.jpg"}) {
             childImageSharp {
-                fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-            }
+          # Specify a fluid image and fragment
+          # The default maxWidth is 800 pixels
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
   `)
   return (
     <div>
+      <h1>Hello gatsby-image</h1>
       <Img
         fluid={data.file.childImageSharp.fluid}
         alt="Gatsby Docs are awesome"
