@@ -5,6 +5,7 @@ module.exports = {
       'Paul-Marie Beraudo est un avocat inscrit au Barreau de Thonon-les-Bains, en Haute-Savoie.',
   },
   plugins: [
+    `react-slideshow-image`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

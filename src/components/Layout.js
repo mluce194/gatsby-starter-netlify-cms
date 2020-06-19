@@ -4,11 +4,11 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Logo from '../components/Logo'
 import LanguageSwitch from '../components/LanguageSwitch'
-import Slider from '../components/Slider'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import styled from "styled-components"
+import Slideshow from '../components/Slideshow'
 
 const MyBox = styled.div`
 background: pink;
@@ -63,7 +63,7 @@ const TemplateWrapper = ({ children }) => {
         <LanguageSwitch />
       </div>
       <Navbar />
-      <Slider />
+      <Slideshow />
       <div>{children}</div>
       <MyBox>Text inside my box</MyBox>
       <Footer />

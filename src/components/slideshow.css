@@ -1,0 +1,37 @@
+
+.slide-container {
+  width: 100%;
+  margin: auto;
+  text-align:center;
+}
+
+.react-slideshow-container {
+  -webkit-box-shadow: -1px 20px 21px -13px rgba(0,0,0,0.41);
+  -moz-box-shadow: -1px 20px 21px -13px rgba(0,0,0,0.41);
+  box-shadow: -1px 20px 21px -13px rgba(0,0,0,0.41);
+}
+
+.react-slideshow-container + div.indicators {
+  display: inline-flex;
+  background: #ececec;
+  position: relative;
+  top: -30px;
+  padding: 5px 5px 0;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  width: 100%;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
