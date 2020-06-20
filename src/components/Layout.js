@@ -4,7 +4,6 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Logo from '../components/Logo'
 import LanguageSwitch from '../components/LanguageSwitch'
-import Slideshow from '../components/Slideshow'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
@@ -63,7 +62,6 @@ const TemplateWrapper = ({ children }) => {
         <LanguageSwitch />
       </div>
       <Navbar />
-      <Slideshow />
       <div>{children}</div>
       <MyBox>Text inside my box</MyBox>
       <Footer />
