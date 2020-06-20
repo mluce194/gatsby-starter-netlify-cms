@@ -4,12 +4,16 @@ title: Présentation
 heading: Domaines d'intervention
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title: Why Kaldi
+  title: Maître Paul-Marie Beraudo
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Maître BERAUDO est avocat inscrit au barreau de THONON LES BAINS, après
+    avoir exercé à Grenoble.
+
+
+    Il est diplômé en droit des affaires de la faculté de droit de GRENOBLE et a étudié le droit anglo-saxon à l'Université du WYOMING.
+
+
+    Il parle et rédige parfaitement l'anglais.
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
@@ -43,7 +47,7 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-  heading: What we offer
+  heading: Domaines d'intervention
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
