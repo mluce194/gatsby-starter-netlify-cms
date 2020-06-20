@@ -1,15 +1,20 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-heading: Great coffee with a conscience
+title: Présentation
+image: /img/home-jumbotron.jpg
+heading: Domaines d'intervention
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title: Why Kaldi
+  title: Maître Paul-Marie Beraudo
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Maître BERAUDO est avocat inscrit au barreau de THONON LES BAINS, après
+    avoir exercé à Grenoble.
+
+
+    Il est diplômé en droit des affaires de la faculté de droit de GRENOBLE et a étudié le droit anglo-saxon à l'Université du WYOMING.
+
+
+    Il parle et rédige parfaitement l'anglais.
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
@@ -23,7 +28,7 @@ intro:
         variety of coffee beans grown with great care for the environment and
         local communities. Check our post or contact us directly for current
         availability.
-    - image: /img/coffee-gear.png
+    - image: /img/article-24px.svg
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level. No matter if you roast your
@@ -36,19 +41,12 @@ intro:
         to help. You can schedule a custom 1-on-1 consultation with our baristas
         to learn anything you want to know about coffee roasting and brewing.
         Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
-  heading: What we offer
+  heading: Domaines d'intervention
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Le cabinet est généraliste et traite de toutes les affaires courantes devant
+    les tribunaux.
+
+    Les activités dominantes du cabinet sont le contentieux de l’immobilier et la défense pénale.
 main:
   heading: Great coffee with no compromises
   description: >
