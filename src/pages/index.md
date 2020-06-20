@@ -63,5 +63,4 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-image: /img/home-jumbotron.jpg
 ---
