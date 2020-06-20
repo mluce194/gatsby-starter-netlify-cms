@@ -1,6 +1,7 @@
 ---
 templateKey: index-page
 title: Présentation
+image: /img/home-jumbotron.jpg
 heading: Domaines d'intervention
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
@@ -20,7 +21,7 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   knowledge to anyone.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/gavel-24px.svg
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
@@ -62,5 +63,4 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-image: /img/home-jumbotron.jpg
 ---
