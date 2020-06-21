@@ -24,6 +24,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <Slideshow></Slideshow>
+    <Features gridItems={intro.blurbs} />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -39,7 +40,6 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
