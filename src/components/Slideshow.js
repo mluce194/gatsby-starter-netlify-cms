@@ -5,8 +5,10 @@ import './slideshow.css'
 import Image1 from "../img/bg/slider3.jpg";
 import Image2 from "../img/bg/slider4.jpg";
 
-const slideImages = [Image1, Image2];
 
+
+
+const slideImages = [Image1, Image2];
 const properties = {
   duration: 5000,
   transitionDuration: 500,
@@ -19,7 +21,10 @@ const properties = {
   },
 };
 
-export default function Slideshow() {
+
+
+
+const Slideshow = () => {
   return (
     <div className="slide-container">
       <Slide {...properties}>
@@ -35,3 +40,5 @@ export default function Slideshow() {
     </div>
   );
 }
+
+export default Slideshow;
