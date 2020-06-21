@@ -20,7 +20,7 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   knowledge to anyone.
 intro:
   blurbs:
-    - image: /img/gavel-24px.svg
+    - image: /img/baseline_gavel_black_18dp.png
       text: >
         Le cabinet est généraliste et traite de toutes les affaires courantes
         devant les tribunaux.
