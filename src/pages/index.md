@@ -20,25 +20,12 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   knowledge to anyone.
 intro:
   blurbs:
-    - image: /img/baseline_gavel_black_18dp.png
-      text: >
-        Le cabinet est généraliste et traite de toutes les affaires courantes
-        devant les tribunaux.
-
-        Les activités dominantes du cabinet sont le contentieux de l’immobilier et la défense pénale.
-    - image: /img/article-24px.svg
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
+    - image: /img/avocat-beraudo-presentation.png
+      text: Présentation
+    - image: /img/avocat-domaines-intervention.png
+      text: Domaines d'intervention
+    - image: /img/avocat-thonon-les-bains-contact.png
+      text: Contact
   heading: Domaines d'intervention
   description: >
     Le cabinet est généraliste et traite de toutes les affaires courantes devant
