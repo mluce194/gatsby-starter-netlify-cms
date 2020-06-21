@@ -1,7 +1,6 @@
 ---
 templateKey: index-page
 title: Présentation
-image: /img/home-jumbotron.jpg
 heading: Domaines d'intervention
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
@@ -23,11 +22,10 @@ intro:
   blurbs:
     - image: /img/gavel-24px.svg
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Le cabinet est généraliste et traite de toutes les affaires courantes
+        devant les tribunaux.
+
+        Les activités dominantes du cabinet sont le contentieux de l’immobilier et la défense pénale.
     - image: /img/article-24px.svg
       text: >
         We offer a small, but carefully curated selection of brewing gear and
@@ -63,4 +61,5 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+image: /img/home-jumbotron.jpg
 ---
