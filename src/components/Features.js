@@ -18,7 +18,7 @@ const FeatureGrid = ({ gridItems }) => (
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
-          <p style={{textAlign: 'center'}}><Link>{item.text}</Link></p>
+          <p style={{textAlign: 'center'}}><Link to={item.lien}>{item.text}</Link></p>
         </section>
       </div>
     ))}
@@ -30,6 +30,7 @@ FeatureGrid.propTypes = {
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       text: PropTypes.string,
+      lien: PropTypes.string
     })
   ),
 }
