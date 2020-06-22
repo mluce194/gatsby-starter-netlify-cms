@@ -3,6 +3,7 @@
   width: 100%;
   margin: auto;
   text-align:center;
+  background: #ECECEC;
 }
 
 .react-slideshow-container {
@@ -13,7 +14,7 @@
 
 .react-slideshow-container + div.indicators {
   display: inline-flex;
-  background: #ececec;
+  background: #ECECEC;
   position: relative;
   top: -30px;
   padding: 5px 5px 0;
@@ -34,6 +35,10 @@
   font-size: 20px;
   background: #efefef;
   text-align: center;
+}
+
+.column.is-one-third:nth-child(even) {
+  background-color: #C4C4C4;
 }
 
 

@@ -8,6 +8,7 @@ import Image2 from "../img/bg/slider4.jpg";
 
 
 
+
 const slideImages = [Image1, Image2];
 const properties = {
   duration: 5000,
