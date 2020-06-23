@@ -135,6 +135,7 @@ export const pageQuery = graphql`
               }
             }
             text
+            lien
           }
           heading
           description

@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import { Link } from 'gatsby'
 
+
 const FeatureGrid = ({ gridItems }) => (
+
   <div className="columns is-multiline" style={{backgroundColor: "#ECECEC"}}>
     {gridItems.map((item) => (
       <div key={item.text} className="column is-one-third">
