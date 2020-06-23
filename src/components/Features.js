@@ -17,7 +17,7 @@ const FeatureGrid = ({ gridItems }) => (
                 display: 'inline-block',
               }}
             >
-              <PreviewCompatibleImage imageInfo={item} />
+              <Link to={item.lien}><PreviewCompatibleImage imageInfo={item} /></Link>
             </div>
           </div>
           <p style={{textAlign: 'center'}}><Link to={item.lien}>{item.text}</Link></p>
