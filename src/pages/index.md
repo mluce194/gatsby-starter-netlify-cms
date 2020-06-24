@@ -39,8 +39,8 @@ main:
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    alt: Paul-Marie Beraudo, avocat Thonon les Bains
+    image: /img/lady-justice-2388500_640.jpg
     heading: Maître Paul-Marie BERAUDO
     description: >-
       Maître BERAUDO est avocat inscrit au barreau de THONON LES BAINS, après
@@ -52,17 +52,29 @@ main:
 
       Il parle et rédige parfaitement l'anglais.
   image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    alt: Paul-Marie Beraudo, avocat - domaines d'intervention
+    image: /img/bookcase-335849_640.jpg
     heading: Domaines d’intervention
-    description: |-
-      Les contentieux de l'immobilier et de la construction
-      Mesure d'exécution et saisie immobilière
-      Défense pénale
-      Affaires familiales
-      Droit des affaires
-      Droit du travail
-      Droit de la responsabilité
+    description: >-
+      Le cabinet est généraliste et traite de toutes les affaires courantes
+      devant les tribunaux.\
+
+      Les activités dominantes du cabinet sont le contentieux de l’immobilier et la défense pénale
+
+
+      * Les contentieux de l'immobilier et de la construction 
+
+      * Mesure d'exécution et saisie immobilière
+
+      * Défense pénale
+
+      * Affaires familiales
+
+      * Droit des affaires
+
+      * Droit du travail
+
+      * Droit de la responsabilité
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
