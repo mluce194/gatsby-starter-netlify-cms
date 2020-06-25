@@ -11,13 +11,10 @@ import loadable from '@loadable/component';
 const Slideshow = loadable(() => import('../components/Slideshow'))
 
 export const IndexPageTemplate = ({
-  image,
-  title,
   heading,
-  subheading,
-  main,
   description,
   intro,
+  main
 }) => (
   <div>
     <Slideshow></Slideshow>
@@ -34,8 +31,8 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p>{description}</p>
-                    <p>Contenu principal (main) : {main.description}</p>
+                    <p>{main.image1.description}</p>
+                    <p>Mon image : {main.image1.image}</p>
                   </div>
                 </div>
                 <div className="columns">
@@ -67,10 +64,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
-  description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -82,12 +76,10 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
+        heading={frontmatter.intro.heading}
         main={frontmatter.main}
-        description={frontmatter.description}
         intro={frontmatter.intro}
+        main={frontmatter.main}
       />
     </Layout>
   )
@@ -107,18 +99,12 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
-        }
-        heading
-        subheading
-        main {
-          description
         }
         description
         intro {
@@ -135,6 +121,18 @@ export const pageQuery = graphql`
           }
           heading
           description
+        }
+        main {
+          image1 {
+            description
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }
