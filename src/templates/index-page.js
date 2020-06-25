@@ -10,15 +10,12 @@ import loadable from '@loadable/component';
 
 const Slideshow = loadable(() => import('../components/Slideshow'))
 
-
-
-
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
   subheading,
-  mainpitch,
+  main,
   description,
   intro,
 }) => (
@@ -38,6 +35,7 @@ export const IndexPageTemplate = ({
                       {heading}
                     </h3>
                     <p>{description}</p>
+                    <p>Contenu principal (main) : {main.description}</p>
                   </div>
                 </div>
                 <div className="columns">
@@ -72,7 +70,6 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -88,7 +85,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
+        main={frontmatter.main}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -120,8 +117,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
+        main {
           description
         }
         description
