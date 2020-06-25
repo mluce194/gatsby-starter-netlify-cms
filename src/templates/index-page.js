@@ -7,6 +7,7 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
 import loadable from '@loadable/component';
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const Slideshow = loadable(() => import('../components/Slideshow'))
 
@@ -16,7 +17,9 @@ export const IndexPageTemplate = ({
   intro,
   main
 }) => (
+
   <div>
+    <div>{console.log("Mes données",{main})}</div>
     <Slideshow></Slideshow>
     <Features gridItems={intro.blurbs} />
     <section className="section section--gradient">
@@ -32,7 +35,8 @@ export const IndexPageTemplate = ({
                       {heading}
                     </h3>
                     <p>{main.image1.description}</p>
-                    <p>Mon image : {main.image1.image}</p>
+                    <p>Mon image : <img src={main.image1.image} alt={main.image1.alt}/>
+</p>
                   </div>
                 </div>
                 <div className="columns">
@@ -68,6 +72,10 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  main: PropTypes.shape({
+    description: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -79,7 +87,6 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.intro.heading}
         main={frontmatter.main}
         intro={frontmatter.intro}
-        main={frontmatter.main}
       />
     </Layout>
   )
@@ -125,6 +132,7 @@ export const pageQuery = graphql`
         main {
           image1 {
             description
+            alt
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
