@@ -35,7 +35,8 @@ export const IndexPageTemplate = ({
                       {heading}
                     </h3>
                     <p>{main.image1.description}</p>
-                    <p>Mon image : <img src={main.image1.image} alt={main.image1.alt}/>
+                    <p>Mon image :  <PreviewCompatibleImage imageInfo={main.image1} />
+
 </p>
                   </div>
                 </div>
