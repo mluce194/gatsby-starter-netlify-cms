@@ -6,10 +6,11 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import loadable from '@loadable/component';
 
-const Slideshow = loadable(() => import('../components/Slideshow'))
 
+const Slideshow = loadable(() => import('../components/Slideshow'))
 
 
 
@@ -17,9 +18,8 @@ export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  subheading,
-  mainpitch,
   description,
+  main,
   intro,
 }) => (
   <div>
@@ -36,6 +36,8 @@ export const IndexPageTemplate = ({
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
+                      <br />
+                      <PreviewCompatibleImage imageInfo={main.image1} />
                     </h3>
                     <p>{description}</p>
                   </div>
@@ -71,6 +73,7 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
+  image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
@@ -87,8 +90,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
+        main={frontmatter.main}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -119,12 +121,21 @@ export const pageQuery = graphql`
           }
         }
         heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
         description
+        main {
+          heading
+          description
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         intro {
           blurbs {
             image {
@@ -144,3 +155,4 @@ export const pageQuery = graphql`
     }
   }
 `
+
