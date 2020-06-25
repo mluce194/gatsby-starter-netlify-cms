@@ -19,6 +19,8 @@ export const ProductPageTemplate = ({
   pricing,
 }) => (
   <div className="content">
+        <div>{console.log("Mes données",{main})}</div>
+
     <div
       className="full-width-image-container margin-top-0"
       style={{

@@ -2,17 +2,6 @@
 heading: Domaines d'intervention
 subheading: Support sustainable farming while enjoying a cup
 templateKey: index-page
-mainpitch:
-  title: Maître Paul-Marie Beraudo
-  description: >
-    Maître BERAUDO est avocat inscrit au barreau de THONON LES BAINS, après
-    avoir exercé à Grenoble.
-
-
-    Il est diplômé en droit des affaires de la faculté de droit de GRENOBLE et a étudié le droit anglo-saxon à l'Université du WYOMING.
-
-
-    Il parle et rédige parfaitement l'anglais.
 intro:
   blurbs:
     - image: /img/avocat-beraudo-presentation.png
@@ -75,6 +64,7 @@ main:
       * Droit du travail
 
       * Droit de la responsabilité
+<<<<<<< HEAD
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
@@ -83,4 +73,6 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
+=======
+>>>>>>> 62265b055ceaf78aa1d9d5adb01a20c3b273c327
 ---
