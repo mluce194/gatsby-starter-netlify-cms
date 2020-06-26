@@ -16,8 +16,8 @@ export const IndexPageTemplate = ({ heading, description, intro, main }) => (
   <div>
     <Slideshow></Slideshow>
     <Features gridItems={intro.blurbs} />
-    <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.description}/>
-    <ContentRow image={main.image2} heading={main.image2.heading} description={main.image2.description}/>
+    <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.body}/>
+    <ContentRow image={main.image2} heading={main.image2.heading} description={main.image2.body}/>
   </div>
 );
 
@@ -29,7 +29,7 @@ IndexPageTemplate.propTypes = {
   }),
   main: PropTypes.shape({
     heading: PropTypes.string,
-    description: PropTypes.string,
+    body: PropTypes.string,
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
