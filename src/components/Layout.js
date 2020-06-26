@@ -63,7 +63,6 @@ const TemplateWrapper = ({ children }) => {
       </div>
       <Navbar />
       <div>{children}</div>
-      <MyBox>Text inside my box</MyBox>
       <Footer />
     </div>
   )

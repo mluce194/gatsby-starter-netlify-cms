@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import ContentRow from "../components/ContentRow";
 
 import loadable from "@loadable/component";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
@@ -15,25 +16,8 @@ export const IndexPageTemplate = ({ heading, description, intro, main }) => (
   <div>
     <Slideshow></Slideshow>
     <Features gridItems={intro.blurbs} />
-    <section className="section section--gradient">
-        <div className="section">
-          <div className="columns">
-              <div className="content">
-                <div className="columns">
-                  <div className="column is-half">
-                    <PreviewCompatibleImage imageInfo={main.image1} />
-                  </div>
-                  <div className="column is-half">
-                    <h1 className="has-text-weight-semibold is-size-2">
-                      {main.image1.heading}
-                    </h1>
-                    <p>{main.image1.description}</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-    </section>
+    <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.description}/>
+    <ContentRow image={main.image2} heading={main.image2.heading} description={main.image2.description}/>
   </div>
 );
 
@@ -47,6 +31,7 @@ IndexPageTemplate.propTypes = {
     heading: PropTypes.string,
     description: PropTypes.string,
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
 };
 
@@ -103,6 +88,18 @@ export const pageQuery = graphql`
         }
         main {
           image1 {
+            heading
+            description
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image2 {
             heading
             description
             alt
