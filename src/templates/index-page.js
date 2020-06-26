@@ -13,20 +13,17 @@ const Slideshow = loadable(() => import("../components/Slideshow"));
 
 export const IndexPageTemplate = ({ heading, description, intro, main }) => (
   <div>
-    <div>{console.log("Mes données", { main })}</div>
     <Slideshow></Slideshow>
     <Features gridItems={intro.blurbs} />
     <section className="section section--gradient">
-      <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="columns">
-                  <div className="column is-6">
+                  <div className="column is-half">
                     <PreviewCompatibleImage imageInfo={main.image1} />
                   </div>
-                  <div className="column is-6">
+                  <div className="column is-half">
                     <h1 className="has-text-weight-semibold is-size-2">
                       {main.image1.heading}
                     </h1>
@@ -34,10 +31,8 @@ export const IndexPageTemplate = ({ heading, description, intro, main }) => (
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
-      </div>
     </section>
   </div>
 );
