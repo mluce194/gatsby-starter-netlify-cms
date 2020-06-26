@@ -1,7 +1,6 @@
 ---
 heading: Domaines d'intervention
 subheading: Support sustainable farming while enjoying a cup
-templateKey: index-page
 intro:
   blurbs:
     - image: /img/avocat-beraudo-presentation.png
@@ -19,6 +18,7 @@ intro:
     les tribunaux.
 
     Les activités dominantes du cabinet sont le contentieux de l’immobilier et la défense pénale.
+templateKey: index-page
 title: Présentation
 main:
   heading: Great coffee with no compromises
@@ -29,7 +29,7 @@ main:
     optimal for the plants, farmers and the local environment.
   image1:
     alt: Paul-Marie Beraudo, avocat Thonon les Bains
-    image: /img/lady-justice-2388500_640.jpg
+    image: /img/avocat-thonon-les-bains.jpg
     heading: Maître Paul-Marie BERAUDO
     description: >-
       Maître BERAUDO est avocat inscrit au barreau de THONON LES BAINS, après
@@ -42,7 +42,7 @@ main:
       Il parle et rédige parfaitement l'anglais.
   image2:
     alt: Paul-Marie Beraudo, avocat - domaines d'intervention
-    image: /img/bookcase-335849_640.jpg
+    image: /img/avocat-paul-marie-beraudo.jpg
     heading: Domaines d’intervention
     description: >-
       Le cabinet est généraliste et traite de toutes les affaires courantes
