@@ -89,7 +89,7 @@ export const pageQuery = graphql`
         main {
           image1 {
             heading
-            description
+            body
             alt
             image {
               childImageSharp {
@@ -101,7 +101,7 @@ export const pageQuery = graphql`
           }
           image2 {
             heading
-            description
+            body
             alt
             image {
               childImageSharp {
