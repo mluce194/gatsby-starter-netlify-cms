@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import ContentRow from "../components/ContentRow";
+import Contact from "../components/Contact";
 
 import loadable from "@loadable/component";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
@@ -16,8 +17,18 @@ export const IndexPageTemplate = ({ heading, description, intro, main }) => (
   <div>
     <Slideshow></Slideshow>
     <Features gridItems={intro.blurbs} />
-    <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.body}/>
-    <ContentRow image={main.image2} heading={main.image2.heading} description={main.image2.body}/>
+    <section className="section section--gradient" style={{ padding: 0 }}>
+      <div className="section" style={{ padding: 0 }}>
+        <div className="columns">
+          <div className="content">
+            <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.body} />
+            <ContentRow image={main.image2} heading={main.image2.heading} description={main.image2.body} />
+            <Contact />
+
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 );
 

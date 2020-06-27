@@ -1,0 +1,29 @@
+.columns {
+   margin-right: 0;
+   margin-top: 0;
+}
+
+.columns:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.columns:nth-child(even) {
+  flex-direction: row-reverse;
+  margin-left: 0;
+  margin-right: -0.75rem;
+  background-color: #800000;
+  color: #fff;
+
+}
+
+.columns:nth-child(even) h1 {
+    color: #fff;
+}
+
+.column {
+    padding: 0;
+}
+
+.is-half:nth-child(even) {
+    padding: 2rem;
+}
