@@ -10,10 +10,11 @@ import Contact from "../components/Contact";
 
 import loadable from "@loadable/component";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import { map } from "lodash";
 
 const Slideshow = loadable(() => import("../components/Slideshow"));
 
-export const IndexPageTemplate = ({ heading, description, intro, main }) => (
+export const IndexPageTemplate = ({ heading, description, intro, main, contact, map }) => (
   <div>
     <Slideshow></Slideshow>
     <Features gridItems={intro.blurbs} />
@@ -23,7 +24,7 @@ export const IndexPageTemplate = ({ heading, description, intro, main }) => (
           <div className="content">
             <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.body} />
             <ContentRow image={main.image2} heading={main.image2.heading} description={main.image2.body} />
-            <Contact />
+            <Contact contact={contact} map={map.code}/>
 
           </div>
         </div>
@@ -44,6 +45,8 @@ IndexPageTemplate.propTypes = {
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
+  contact: PropTypes.string,
+  map: PropTypes.string,
 };
 
 const IndexPage = ({ data }) => {
@@ -55,6 +58,8 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.intro.heading}
         main={frontmatter.main}
         intro={frontmatter.intro}
+        contact={frontmatter.contact}
+        map={frontmatter.code}
       />
     </Layout>
   );
@@ -122,6 +127,10 @@ export const pageQuery = graphql`
               }
             }
           }
+        }
+        contact
+        code {
+          code
         }
       }
     }

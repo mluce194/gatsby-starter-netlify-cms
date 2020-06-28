@@ -1,20 +1,16 @@
 import React from 'react'
 import "./contact.css"
 
-const Contact = class extends React.Component {
-    render() {
-        return(
+const Contact = (props) => (
             <section className="blocContact">
                 <div><strong>Nous contacter</strong>
-                Texte Cms
+                <p>{props.contact}</p>
                 
                 </div>
                 <div>
-                    Code HTML à intégrer
+                    {props.map}
                 </div>
             </section>
         )
-    }
-}
 
 export default Contact;
