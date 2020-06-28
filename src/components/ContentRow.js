@@ -10,9 +10,9 @@ const ContentRow = (props) => (
       <PreviewCompatibleImage imageInfo={props.image} />
     </div>
     <div className="column is-half">
-      <h1 className="has-text-weight-semibold is-size-2">
+      <h2 className="has-text-weight-semibold entete--accueil">
         {props.heading}
-      </h1>
+      </h2>
       <p>{props.description}</p>
     </div>
   </div>

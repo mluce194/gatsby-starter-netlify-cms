@@ -16,14 +16,28 @@
 
 }
 
-.columns:nth-child(even) h1 {
-    color: #fff;
-}
-
 .column {
     padding: 0;
 }
 
 .is-half:nth-child(even) {
     padding: 2rem;
+}
+
+.entete--accueil {
+    text-transform: uppercase;
+    color: #800000;
+    font-size: 2rem;
+}
+
+.content h2.entete--accueil {
+    color: #800000;
+}
+
+.entete--accueil::before {
+    content: "-- ";
+}
+
+.columns:nth-child(even) .entete--accueil {
+    color: #fff;
 }

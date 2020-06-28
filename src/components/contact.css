@@ -1,9 +1,16 @@
 .blocContact {
     display: flex;
-    padding: 1rem;
     justify-content: space-between;
 }
 
 .columns {
     width: 100%;
+}
+
+.blocContact__adresse {
+    padding: 2rem 3rem;
+}
+
+.blocContact__map {
+    padding-left: 2rem;
 }
