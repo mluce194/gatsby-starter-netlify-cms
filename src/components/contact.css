@@ -3,3 +3,7 @@
     padding: 1rem;
     justify-content: space-between;
 }
+
+.columns {
+    width: 100%;
+}

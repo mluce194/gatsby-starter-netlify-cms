@@ -14,7 +14,7 @@ import { map } from "lodash";
 
 const Slideshow = loadable(() => import("../components/Slideshow"));
 
-export const IndexPageTemplate = ({ heading, description, intro, main, contact, map }) => (
+export const IndexPageTemplate = ({ heading, description, intro, main, contact }) => (
   <div>
     <Slideshow></Slideshow>
     <Features gridItems={intro.blurbs} />
@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({ heading, description, intro, main, contact, 
           <div className="content">
             <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.body} />
             <ContentRow image={main.image2} heading={main.image2.heading} description={main.image2.body} />
-            <Contact contact={contact} map={map.code}/>
+            <Contact contact={contact}/>
 
           </div>
         </div>
@@ -46,7 +46,6 @@ IndexPageTemplate.propTypes = {
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
   contact: PropTypes.string,
-  map: PropTypes.string,
 };
 
 const IndexPage = ({ data }) => {
@@ -59,7 +58,6 @@ const IndexPage = ({ data }) => {
         main={frontmatter.main}
         intro={frontmatter.intro}
         contact={frontmatter.contact}
-        map={frontmatter.code}
       />
     </Layout>
   );
@@ -129,9 +127,6 @@ export const pageQuery = graphql`
           }
         }
         contact
-        code {
-          code
-        }
       }
     }
   }
