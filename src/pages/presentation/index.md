@@ -1,4 +1,7 @@
 ---
+templateKey: presentation-page
+path: /presentation
+title: Présentation
 heading: Paul-Marie Beraudo - Présentation
 main1:
   description1:
