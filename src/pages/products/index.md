@@ -122,6 +122,32 @@ main:
       * Liquidation de communauté et partage
       * Mesure de protection de l’enfant
       * Filiation et adoption
+  description5:
+    heading: Droit des affaires
+    body: |-
+      
+
+      * Recouvrement de créances
+      * Procédures collectives: redressement et liquidation judiciaires
+      * Contrat commerciaux
+      * Droit bancaire
+  description6:
+    heading: Droit du travail
+    body: |-
+      
+
+      * Contentieux devant le Conseil des Prud’hommes
+      * Licenciement
+      * Accidents du travail
+  description7:
+    heading: Droit de la responsabilité
+    body: |-
+      
+
+      * Responsabilité civile et professionnelle
+      * Accidents de la circulation
+      * Indemnisation des préjudices
+      * Droit des assurances
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
