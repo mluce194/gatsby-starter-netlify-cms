@@ -16,7 +16,7 @@ export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
       className="full-width-image-container margin-top-0"
 
     >
-      <h1
+      <h2
         className="has-text-weight-bold is-size-1"
         style={{
           boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
@@ -26,7 +26,7 @@ export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
         }}
       >
         {heading}
-      </h1>
+      </h2>
     </div>
     <section className="section section--gradient">
       <div className="container">
@@ -173,5 +173,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-
