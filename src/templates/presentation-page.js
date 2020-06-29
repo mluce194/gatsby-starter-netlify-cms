@@ -3,13 +3,9 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
-import ContentRow from "../components/ContentRow";
-import Contact from "../components/Contact";
+
 
 import loadable from "@loadable/component";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import { map } from "lodash";
 
 const Slideshow = loadable(() => import("../components/Slideshow"));
@@ -43,8 +39,7 @@ PresentationPageTemplate.propTypes = {
   contact: PropTypes.string,
 };
 
-const PresentationPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+const PresentationPage = () => {
 
   return (
     <Layout>
@@ -55,13 +50,7 @@ const PresentationPage = ({ data }) => {
   );
 };
 
-PresentationPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-};
+
 
 export default PresentationPage;
 

@@ -7,7 +7,7 @@ const PresentationPagePreview = ({ entry, getAsset }) => {
 
   if (data) {
     return (
-      <IndexPageTemplate
+      <PresentationPageTemplate
         image={getAsset(data.image)}
         title={data.title}
         heading={data.heading}
@@ -18,7 +18,7 @@ const PresentationPagePreview = ({ entry, getAsset }) => {
   }
 }
 
-IndexPagePreview.propTypes = {
+PresentationPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
