@@ -15,7 +15,7 @@ export const PresentationPageTemplate = ({image, heading, main1}) => (
       className="full-width-image-container margin-top-0"
     
     >
-      <h2
+      <h1
         className="has-text-weight-bold is-size-1"
         style={{
           boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
@@ -25,30 +25,30 @@ export const PresentationPageTemplate = ({image, heading, main1}) => (
         }}
       >
         {heading}
-      </h2>
+      </h1>
     </div>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-7 is-offset-1">
+            <div className="column is-one-quarter">
               <h2 className="has-text-weight-semibold is-size-2">{main1.description1.heading}</h2>
               <p>{main1.description1.text}</p>
             </div>
-          </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main1.description2.heading}
-                  </h3>
-                  <p>{main1.description2.text}</p>
-                </div>
-              </div>
-          
+            <div className="column is-one-quarter">
+              <h2 className="has-text-weight-semibold is-size-2">{main1.description2.heading}</h2>
+              <p>{main1.description3.text}</p>
+            </div>
+            <div className="column is-one-quarter">
+              <h2 className="has-text-weight-semibold is-size-2">{main1.description3.heading}</h2>
+              <p>{main1.description3.text}</p>
+            </div>
+            <div className="column is-one-quarter">
+              <h2 className="has-text-weight-semibold is-size-2">{main1.description4.heading}</h2>
+              <p>{main1.description4.text}</p>
             </div>
           </div>
+         
         </div>
       </div>
     </section>
