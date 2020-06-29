@@ -30,6 +30,13 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+        - file: "src/pages/presentation.md"
+        label: "Présentation"
+        name: "presentation"
+        fields:
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}]}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "presentation-page"}
+          - {label: "Le rôle de l'avocat", name: main1, widget: object, fields: [{label: Text1, name: text1, widget: text}, {label: Text2, name: text2, widget: text}, {label: Text3, name: text3, widget: text}, {label: Text4, name: text4, widget: text}]}
       - file: "src/pages/index.md"
         label: "Page d'accueil"
         name: "index"
