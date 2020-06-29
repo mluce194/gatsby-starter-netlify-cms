@@ -2,18 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import PresentationCard from '../components/PresentationCard'
 
 import Layout from "../components/Layout";
 
 
 
-export const PresentationPageTemplate = ({image, heading, main1}) => (
+export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
   <div className="content">
     <div>{console.log("Mon image", image)}</div>
 
     <div
       className="full-width-image-container margin-top-0"
-    
+
     >
       <h1
         className="has-text-weight-bold is-size-1"
@@ -29,27 +30,25 @@ export const PresentationPageTemplate = ({image, heading, main1}) => (
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
           <div className="columns">
-            <div className="column is-one-quarter">
-              <h2 className="has-text-weight-semibold is-size-2">{main1.description1.heading}</h2>
-              <p>{main1.description1.text}</p>
-            </div>
-            <div className="column is-one-quarter">
-              <h2 className="has-text-weight-semibold is-size-2">{main1.description2.heading}</h2>
-              <p>{main1.description3.text}</p>
-            </div>
-            <div className="column is-one-quarter">
-              <h2 className="has-text-weight-semibold is-size-2">{main1.description3.heading}</h2>
-              <p>{main1.description3.text}</p>
-            </div>
-            <div className="column is-one-quarter">
-              <h2 className="has-text-weight-semibold is-size-2">{main1.description4.heading}</h2>
-              <p>{main1.description4.text}</p>
-            </div>
+
+            <PresentationCard heading={main1.description1.heading} description={main1.description1.text} />
+          
+            <PresentationCard heading={main1.description2.heading} description={main1.description2.text} />
+            <PresentationCard heading={main1.description3.heading} description={main1.description3.text} />
+
+            <PresentationCard heading={main1.description4.heading} description={main1.description4.text} />
+
           </div>
-         
-        </div>
+
+          <div className="columns">
+          <PresentationCard heading={main2.description1.heading} description={main2.description1.text} />
+          <PresentationCard heading={main2.description2.heading} description={main2.description2.text} />
+          <PresentationCard heading={main2.description3.heading} description={main2.description3.text} />
+
+          </div>
+
+      
       </div>
     </section>
   </div>
@@ -77,9 +76,24 @@ PresentationPageTemplate.propTypes = {
       text: PropTypes.string,
     }),
   }),
+  main2: PropTypes.shape({
+    heading: PropTypes.string,
+    description1: PropTypes.shape({
+      heading: PropTypes.string,
+      text: PropTypes.string,
+    }),
+    description2: PropTypes.shape({
+      heading: PropTypes.string,
+      text: PropTypes.string,
+    }),
+    description3: PropTypes.shape({
+      heading: PropTypes.string,
+      text: PropTypes.string,
+    }),
+  }),
 };
 
-const PresentationPage = ( {data} ) => {
+const PresentationPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
 
@@ -89,6 +103,8 @@ const PresentationPage = ( {data} ) => {
         image={frontmatter.image}
         heading={frontmatter.heading}
         main1={frontmatter.main1}
+        main2={frontmatter.main2}
+
       />
     </Layout>
   );
@@ -118,6 +134,24 @@ export const pageQuery = graphql`
         }
         heading
         main1 {
+          description1 {
+            heading
+            text
+          }
+          description2 {
+            heading
+            text
+          }
+          description3 {
+            heading
+            text
+          }
+          description4 {
+            heading
+            text
+          }
+        }
+        main2 {
           description1 {
             heading
             text
