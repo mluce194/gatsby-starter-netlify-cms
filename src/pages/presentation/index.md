@@ -2,6 +2,7 @@
 templateKey: presentation-page
 path: /presentation
 title: Présentation
+image: /img/avocat-thonon-les-bains.jpg
 heading: Paul-Marie Beraudo - Présentation
 main1:
   description1:
