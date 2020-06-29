@@ -30,13 +30,6 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/presentation/index.md"
-        label: "Presentation"
-        name: "presentation"
-        fields:
-          - {label: Heading, name: heading, widget: string}
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "presentation-page"}
-          - {label: "Le rôle de l'avocat", name: main1, widget: object, fields: [{label: Description1, name: description1, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}, {label: Description2, name: description2, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}, {label: Description3, name: description3, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}, {label: Description4, name: description4, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}]}
       - file: "src/pages/index.md"
         label: "Page d'accueil"
         name: "index"
@@ -46,8 +39,16 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Main, name: main, widget: object, fields: [{label: Image1, name: image1, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Body, name: body, widget: markdown}, {label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Body, name: body, widget: markdown}, {label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
           - {label: Contact, name: contact, widget: text, output_code_only: 'true'}
+      - file: "src/pages/presentation/index.md"
+        label: "Presentation"
+        name: "presentation"
+        fields:
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "presentation-page"}
+          - {label: "Le rôle de l'avocat", name: main1, widget: object, fields: [{label: Description1, name: description1, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}, {label: Description2, name: description2, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}, {label: Description3, name: description3, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}, {label: Description4, name: description4, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Text, name: text, widget: text}]}]}
       - file: "src/pages/about/index.md"
-        label: "Présentation"
+        label: "Honoraires"
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
