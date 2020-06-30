@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
+import ContentRow from '../components/ContentRow'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const ProductPageTemplate = ({
@@ -49,6 +50,8 @@ export const ProductPageTemplate = ({
               <p>{description}</p>
             </div>
           </div>
+          <div>{main.description1.body}</div>
+          <ContentRow description={main.description1.body} heading={main.description1.heading} image={image}/>
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <Features gridItems={intro.blurbs} />
@@ -116,6 +119,7 @@ ProductPageTemplate.propTypes = {
   main: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
+    description1: PropTypes.array,
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -189,7 +193,10 @@ export const productPageQuery = graphql`
         }
         main {
           heading
-          description
+          description1 {
+            heading
+            body
+          }
           image1 {
             alt
             image {
