@@ -2,7 +2,7 @@
 heading: Domaines d'intervention
 path: /products
 templateKey: product-page
-title: Our Coffee
+title: Paul-Marie Beraudo, avocat - Domaines d'intervention
 image: /img/avocat-paul-marie-beraudo.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
@@ -39,10 +39,28 @@ intro:
         sale. The full price you pay goes to the artist.
   heading: What we offer
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Le cabinet est généraliste et traite de toutes les affaires courantes devant
+    les tribunaux.
+
+    Les activités dominantes du cabinet sont le contentieux de l’immobilier et la défense pénale.
+
+
+    A titre indicatif et non exhaustif, la pratique du cabinet regroupe les domaines d’activité suivants :
+
+
+    Les contentieux de l'immobilier et de la construction
+
+    Mesure d'exécution et saisie immobilière
+
+    Défense pénale
+
+    Affaires familiales
+
+    Droit des affaires
+
+    Droit du travail
+
+    Droit de la responsabilité
 main:
   heading: Great coffee with no compromises
   description1:
