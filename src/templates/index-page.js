@@ -6,6 +6,8 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import ContentRow from "../components/ContentRow";
+import ContentRowImage from '../components/ContentRowImage'
+
 import Contact from "../components/Contact";
 
 import loadable from "@loadable/component";
@@ -22,14 +24,22 @@ export const IndexPageTemplate = ({ heading, description, intro, main, contact }
       <div className="section" style={{ padding: 0 }}>
         <div className="columns">
           <div className="content">
+            <div className="columns columns--ContentRow">
 
-            <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.body} />
+              <ContentRow heading={main.image1.heading} description={main.image1.body} size={"is-half"} />
+              <ContentRowImage image={main.image1} size={"is-half"}/>
+            </div>
 
-            <ContentRow image={main.image2} heading={main.image2.heading} description={main.image2.body} />
-            <Contact contact={contact}/>
+            <div className="columns columns--ContentRow">
 
+              <ContentRow heading={main.image2.heading} description={main.image2.body} size={"is-half"}/>
+              <ContentRowImage image={main.image2}  size={"is-half"}/>
+
+            </div>
+            <Contact contact={contact} />
+
+          </div>
         </div>
-      </div>
       </div>
     </section>
   </div>

@@ -6,6 +6,8 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import ContentRow from '../components/ContentRow'
+import ContentRowImage from '../components/ContentRowImage'
+
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const ProductPageTemplate = ({
@@ -42,68 +44,20 @@ export const ProductPageTemplate = ({
       </h2>
     </div>
     <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
           <div className="columns">
             <div className="column is-7 is-offset-1">
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
               <p>{description}</p>
             </div>
           </div>
-          <div>{main.description1.body}</div>
-          <ContentRow description={main.description1.body} heading={main.description1.heading} image={image}/>
           <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
-                </div>
-              </div>
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
-                      </article>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
-                      </article>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <Testimonials testimonials={testimonials} />
-              <div
-                className="full-width-image-container"
-                style={{
-                  backgroundImage: `url(${
-                    fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
-                  })`,
-                }}
-              />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
-            </div>
+          <ContentRow description={main.description1.body} heading={main.description1.heading} size={"is-one-quarter"}/>
+          <ContentRowImage image={main.image1}  size={"is-one-quarter"} />
+          <ContentRow description={main.description2.body} heading={main.description2.heading}  size={"is-one-quarter"}/>
+          <ContentRowImage image={main.image2}  size={"is-one-quarter"} />
+
+           
           </div>
-        </div>
-      </div>
     </section>
   </div>
 )
@@ -194,6 +148,10 @@ export const productPageQuery = graphql`
         main {
           heading
           description1 {
+            heading
+            body
+          }
+          description2 {
             heading
             body
           }
