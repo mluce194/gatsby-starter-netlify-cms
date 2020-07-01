@@ -1,10 +1,11 @@
 import React from 'react'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import './contentRow.css'
+import ContentRowImage from '../components/ContentRowImage'
 
 const ContentRow = (props) => (
 
-  <div className="columns--ContentRow">
+    <div>
     <div className="column is-half">
       <PreviewCompatibleImage imageInfo={props.image} />
     </div>
@@ -14,7 +15,8 @@ const ContentRow = (props) => (
       </h2>
       <p>{props.description}</p>
     </div>
-  </div>
+    <ContentRowImage image={props.image} />
+    </div>
 
 )
 
