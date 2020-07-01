@@ -22,6 +22,10 @@ export const IndexPageTemplate = ({ heading, description, intro, main, contact }
       <div className="section" style={{ padding: 0 }}>
         <div className="columns">
           <div className="content">
+<<<<<<< HEAD
+=======
+          <div className="columns columns--ContentRow">
+>>>>>>> d710054677d88674fddc679118ababb2de8cbac6
 
             <ContentRow image={main.image1} heading={main.image1.heading} description={main.image1.body} />
 
