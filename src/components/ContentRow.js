@@ -4,12 +4,7 @@ import './contentRow.css'
 import ContentRowImage from '../components/ContentRowImage'
 
 const ContentRow = (props) => (
-<<<<<<< HEAD
           <div className="columns columns--ContentRow">
-=======
-
-    <div>
->>>>>>> d710054677d88674fddc679118ababb2de8cbac6
     <div className="column is-half">
       <PreviewCompatibleImage imageInfo={props.image} />
     </div>
