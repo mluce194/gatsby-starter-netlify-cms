@@ -1,5 +1,4 @@
 import React from 'react'
-import './contentRow.css'
 
 const ContentRow = (props) => (
 

@@ -8,6 +8,7 @@ import Pricing from '../components/Pricing'
 import ContentRow from '../components/ContentRow'
 import ContentRowImage from '../components/ContentRowImage'
 
+
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const ProductPageTemplate = ({
@@ -50,14 +51,34 @@ export const ProductPageTemplate = ({
               <p>{description}</p>
             </div>
           </div>
-          <div className="columns">
+          <div className="columns columns--ContentRow">
           <ContentRow description={main.description1.body} heading={main.description1.heading} size={"is-one-quarter"}/>
           <ContentRowImage image={main.image1}  size={"is-one-quarter"} />
           <ContentRow description={main.description2.body} heading={main.description2.heading}  size={"is-one-quarter"}/>
           <ContentRowImage image={main.image2}  size={"is-one-quarter"} />
+          </div>
+          <div className="columns columns--ContentRow">
+
+          <ContentRow description={main.description3.body} heading={main.description3.heading}  size={"is-one-quarter"}/>
+          <ContentRowImage image={main.image3}  size={"is-one-quarter"} />
+          <ContentRow description={main.description4.body} heading={main.description4.heading}  size={"is-one-quarter"}/>
+          <ContentRowImage image={main.image2}  size={"is-one-quarter"} />
+          </div>
+
+          <div className="columns columns--ContentRow">
+
+          <ContentRow description={main.description5.body} heading={main.description5.heading}  size={"is-one-quarter"}/>
+          <ContentRowImage image={main.image2}  size={"is-one-quarter"} />
+          <ContentRow description={main.description6.body} heading={main.description6.heading}  size={"is-one-quarter"}/>
+          <ContentRowImage image={main.image2}  size={"is-one-quarter"} />
+          </div>
+          <div className="columns columns--ContentRow">
+
+          <ContentRow description={main.description7.body} heading={main.description7.heading}  size={"is-one-quarter"}/>
+          <ContentRowImage image={main.image2}  size={"is-one-quarter"} />
+          </div>
 
            
-          </div>
     </section>
   </div>
 )
@@ -152,6 +173,26 @@ export const productPageQuery = graphql`
             body
           }
           description2 {
+            heading
+            body
+          }
+          description3 {
+            heading
+            body
+          }
+          description4 {
+            heading
+            body
+          }
+          description5 {
+            heading
+            body
+          }
+          description6 {
+            heading
+            body
+          }
+          description7 {
             heading
             body
           }
