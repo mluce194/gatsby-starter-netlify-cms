@@ -7,6 +7,8 @@ import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 import PresentationPagePreview from './preview-templates/PresentationPagePreview'
+import VentesJudiciairesPagePreview from './preview-templates/VentesJudiciairesPagePreview'
+
 
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
@@ -16,4 +18,6 @@ CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 CMS.registerPreviewTemplate('presentation', PresentationPagePreview)
+CMS.registerPreviewTemplate('ventesJudiciaires', VentesJudiciairesPagePreview)
+
 
