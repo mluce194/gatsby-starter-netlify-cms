@@ -2,6 +2,7 @@
 templateKey: VentesJudiciaires-page
 path: /ventesJudiciaires
 title: Paul-Marie Beraudo, avocat - Ventes Judiciaires
+image: /img/vente-judiciaire-thonon-avocat.jpg
 ---
 Le cabinet procède à la saisie d’un bien immobilier appartenant à l’un de vos débiteurs et à sa vente forcée aux enchères sous le contrôle du Juge de l’Exécution.\
 \
