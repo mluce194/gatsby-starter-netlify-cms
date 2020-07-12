@@ -2,6 +2,7 @@
 templateKey: about-page
 path: /about
 title: Paul-Marie Beraudo, avocat - Honoraires
+image: /img/tarif-avocat-thonon-les-bains.jpg
 ---
 Les honoraires d’un avocat sont encadrés par les règles déontologiques de sa profession.\
 \
