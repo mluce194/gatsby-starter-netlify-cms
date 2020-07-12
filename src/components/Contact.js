@@ -1,8 +1,10 @@
 import React from "react";
 import "./contact.css";
+import { graphql } from "gatsby"
 
 const Contact = (props) => (
   <section className="blocContact">
+    <div>{console.log("Mes données")}</div>
     <div class="columns">
       <div class="column is-one-third blocContact__adresse">
         <strong>Nous contacter</strong>
@@ -23,3 +25,4 @@ const Contact = (props) => (
 );
 
 export default Contact;
+

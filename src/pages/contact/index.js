@@ -1,5 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
+import { graphql } from 'gatsby'
+
 import Layout from '../../components/Layout'
 
 function encode(data) {
@@ -109,7 +111,9 @@ export default class Index extends React.Component {
             </div>
           </div>
         </section>
+
       </Layout>
     )
   }
 }
+

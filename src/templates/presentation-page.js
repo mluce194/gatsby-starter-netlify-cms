@@ -13,9 +13,13 @@ export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
     <div>{console.log("Mon image", image)}</div>
 
     <div
-      className="full-width-image-container margin-top-0"
-
-    >
+        className="full-width-image-container margin-top-0"
+        style={{
+          backgroundImage: `url(${
+            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            })`,
+        }}
+      >
       <h2
         className="has-text-weight-bold is-size-1"
         style={{

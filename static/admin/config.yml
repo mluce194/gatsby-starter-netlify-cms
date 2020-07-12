@@ -54,6 +54,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Domaines d'intervention"
@@ -71,4 +72,5 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "VentesJudiciaires-page"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}

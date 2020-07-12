@@ -51,7 +51,7 @@ VentesJudiciairesPage.propTypes = {
 
 export default VentesJudiciairesPage
 
-export const aboutPageQuery = graphql`
+export const VentesJudiciairesPageQuery = graphql`
   query VentesJudiciairesPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
