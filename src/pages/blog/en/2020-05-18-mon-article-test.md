@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-language: fr
-title: Bienvenue sur mon nouveau site Web
+language: en
+title: Welcome on my new Website
 date: 2020-05-18T14:11:50.021Z
 description: Pour mieux satisfaire ses clients, Paul-Marie Beraudo, avocat à
   Thonon-les-Bains, vient de refaire son site Web.
