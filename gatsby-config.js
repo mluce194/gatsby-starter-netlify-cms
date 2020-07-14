@@ -89,23 +89,6 @@ module.exports = {
       options: {        
         langKeyDefault: 'fr',
         useLangKeyLayout: false,
-        markdownRemark: {
-          postPage: 'src/templates/blog-post.js',
-          query: `
-          {
-              allMarkdownRemark {
-                  edges {
-                  node {
-                      fields {
-                      slug,
-                      langKey
-                      }
-                  }
-                  }
-              }
-          }
-          `
-        }
       }
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
