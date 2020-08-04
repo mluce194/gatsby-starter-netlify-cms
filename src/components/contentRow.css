@@ -16,6 +16,11 @@
 
 }
 
+.column--image {
+    background-size: cover;
+    min-height: 20rem;
+}
+
 .entete--accueil {
     text-transform: uppercase;
     color: #800000;

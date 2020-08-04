@@ -4,9 +4,9 @@ import './contentRow.css'
 
 const ContentRowImage = (props) => (
 
-    <div className={`column ${props.size}`}>
-      <PreviewCompatibleImage imageInfo={props.image} />
+    <div className={`column column--image ${props.size}`} style={{backgroundImage: `url(${props.image.image.childImageSharp.fluid.src})`}}>
     </div>
+    
 
 )
 
