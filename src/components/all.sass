@@ -142,8 +142,26 @@ $menu-label-color: $white-ter
 
 @import "~bulma"
 
+.bannerTitle, h1.bannerTitle
+    background-color: $kaldi-red;
+    color: white;
+    padding: 1rem;
+
+.entete, h2.entete, h3.entete
+    text-transform: uppercase;
+    color: $kaldi-red;
+    font-size: 2rem;
+
+.entete::before
+    content: "-- ";
+
+
 .column
   padding-bottom: 0
+
+.columns 
+  margin-left: 0
+  margin-right: 0
 
 .columns:last-child
   margin-bottom: 0

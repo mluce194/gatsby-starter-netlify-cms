@@ -2,9 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import PresentationCard from '../components/PresentationCard'
 
 import Layout from "../components/Layout";
+import ContentRow from "../components/ContentRow";
+import ContentRowImage from "../components/ContentRowImage";
 
 
 
@@ -13,47 +14,49 @@ export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
     <div>{console.log("Mon image", image)}</div>
 
     <div
-        className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })`,
-        }}
-      >
-      <h2
-        className="has-text-weight-bold is-size-1"
-        style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
-        }}
-      >
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url(${
+          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          })`,
+      }}
+    >
+      <h1
+        className="has-text-weight-bold is-size-1 bannerTitle">
         {heading}
-      </h2>
+      </h1>
     </div>
     <section className="section section--gradient">
-      <div className="container">
-          <div className="columns">
+        <h2 className="has-text-weight-semibold entete">{main1.title}</h2>
 
-            <PresentationCard heading={main1.description1.heading} description={main1.description1.text} />
+        <div className="columns">
+
+
+          <ContentRow size="is-one-third" heading={main1.description1.heading} description={main1.description1.text}></ContentRow>
+          <ContentRow size="is-one-third" heading={main1.description2.heading} description={main1.description2.text}></ContentRow>
           
-            <PresentationCard heading={main1.description2.heading} description={main1.description2.text} />
-            <PresentationCard heading={main1.description3.heading} description={main1.description3.text} />
 
-            <PresentationCard heading={main1.description4.heading} description={main1.description4.text} />
 
-          </div>
+        </div>
 
-          <div className="columns">
-          <PresentationCard heading={main2.description1.heading} description={main2.description1.text} />
-          <PresentationCard heading={main2.description2.heading} description={main2.description2.text} />
-          <PresentationCard heading={main2.description3.heading} description={main2.description3.text} />
+        <div className="columns">
 
-          </div>
+          <ContentRow size="is-one-third" heading={main1.description3.heading} description={main1.description3.text}></ContentRow>
+          <ContentRow size="is-one-third" heading={main1.description4.heading} description={main1.description4.text}></ContentRow>
+        </div>
+ 
 
-      
-      </div>
+        <h2 className="has-text-weight-semibold entete">{main2.title}</h2>
+
+
+        <div className="columns">
+          <ContentRow size="is-one-third" heading={main2.description1.heading} description={main2.description1.text}></ContentRow>
+          <ContentRow size="is-one-third" heading={main2.description2.heading} description={main2.description2.text}></ContentRow>
+          <ContentRow size="is-one-third" heading={main2.description3.heading} description={main2.description3.text}></ContentRow>
+
+        </div>
+
+
     </section>
   </div>
 );
@@ -62,6 +65,7 @@ PresentationPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   heading: PropTypes.string,
   main1: PropTypes.shape({
+    title: PropTypes.string,
     heading: PropTypes.string,
     description1: PropTypes.shape({
       heading: PropTypes.string,
@@ -81,6 +85,7 @@ PresentationPageTemplate.propTypes = {
     }),
   }),
   main2: PropTypes.shape({
+    title: PropTypes.string,
     heading: PropTypes.string,
     description1: PropTypes.shape({
       heading: PropTypes.string,
@@ -138,6 +143,7 @@ export const pageQuery = graphql`
         }
         heading
         main1 {
+          title
           description1 {
             heading
             text
@@ -156,6 +162,7 @@ export const pageQuery = graphql`
           }
         }
         main2 {
+          title
           description1 {
             heading
             text
