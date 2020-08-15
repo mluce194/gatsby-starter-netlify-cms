@@ -27,13 +27,13 @@ export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
       </h1>
     </div>
     <section className="section section--gradient">
-        <h2 className="has-text-weight-semibold entete">{main1.title}</h2>
+        <h2 className="has-text-weight-semibold titrePrincipal">{main1.title}</h2>
 
         <div className="columns">
 
 
-          <ContentRow size="is-one-third" heading={main1.description1.heading} description={main1.description1.text}></ContentRow>
-          <ContentRow size="is-one-third" heading={main1.description2.heading} description={main1.description2.text}></ContentRow>
+          <ContentRow size="is-one-third" heading={main1.description1.heading} description={main1.description1.text} priority={3}></ContentRow>
+          <ContentRow size="is-one-third" heading={main1.description2.heading} description={main1.description2.text} priority={3}></ContentRow>
           
 
 
@@ -41,18 +41,18 @@ export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
 
         <div className="columns">
 
-          <ContentRow size="is-one-third" heading={main1.description3.heading} description={main1.description3.text}></ContentRow>
-          <ContentRow size="is-one-third" heading={main1.description4.heading} description={main1.description4.text}></ContentRow>
+          <ContentRow size="is-one-third" heading={main1.description3.heading} description={main1.description3.text} priority={3}></ContentRow>
+          <ContentRow size="is-one-third" heading={main1.description4.heading} description={main1.description4.text} priority={3}></ContentRow>
         </div>
  
 
-        <h2 className="has-text-weight-semibold entete">{main2.title}</h2>
+        <h2 className="has-text-weight-semibold titrePrincipal">{main2.title}</h2>
 
 
         <div className="columns">
-          <ContentRow size="is-one-third" heading={main2.description1.heading} description={main2.description1.text}></ContentRow>
-          <ContentRow size="is-one-third" heading={main2.description2.heading} description={main2.description2.text}></ContentRow>
-          <ContentRow size="is-one-third" heading={main2.description3.heading} description={main2.description3.text}></ContentRow>
+          <ContentRow size="is-one-third" heading={main2.description1.heading} description={main2.description1.text} priority={3}></ContentRow>
+          <ContentRow size="is-one-third" heading={main2.description2.heading} description={main2.description2.text} priority={3}></ContentRow>
+          <ContentRow size="is-one-third" heading={main2.description3.heading} description={main2.description3.text} priority={3}></ContentRow>
 
         </div>
 
