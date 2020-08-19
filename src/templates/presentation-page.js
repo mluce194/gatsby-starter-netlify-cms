@@ -9,6 +9,7 @@ import ContentRowImage from "../components/ContentRowImage";
 
 
 
+
 export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
   <div className="content">
     <div>{console.log("Mon image", image)}</div>
