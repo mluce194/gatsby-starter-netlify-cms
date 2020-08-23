@@ -65,6 +65,8 @@ main1:
       Les solutions alternatives à un procès classique telles que la transaction, la médiation ou l'arbitrage sont, à raison, de plus en plus privilégiées.
   title: Le rôle de l'avocat
   image: /img/pourquoi-avocat-thonon-les-bains.jpg
+  image1: /img/pourquoi-avocat-thonon-les-bains.jpg
+  image2: /img/presentation-cabinet-beraudo-thonon.jpg
 main2:
   title: |
     Présentation du cabinet
@@ -148,5 +150,5 @@ main2:
   description4:
     heading: Placeholder
     text: Placeholder
-  image: /img/presentation-cabinet-beraudo-thonon.jpg
+  image: /img/slider1.jpg
 ---
