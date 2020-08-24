@@ -150,5 +150,5 @@ main2:
   description4:
     heading: Placeholder
     text: Placeholder
-  image: /img/slider1.jpg
+  image: /img/avocat-thonon-les-bains.png
 ---
