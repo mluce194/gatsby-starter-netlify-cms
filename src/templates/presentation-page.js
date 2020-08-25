@@ -44,11 +44,13 @@ export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
       <h2 className="titrePrincipal entete">{main2.title}</h2>
 
 
-      <div className="columns">
-        <ContentRowImage size="is-half" image={main2.image}></ContentRowImage>
-        <ContentRow size="is-half" heading={main2.description1.heading} description={main2.description1.text} priority={3}></ContentRow>
-        <ContentRow size="is-half" heading={main2.description2.heading} description={main2.description2.text} priority={3}></ContentRow>
-        <ContentRow size="is-half" heading={main2.description3.heading} description={main2.description3.text} priority={3}></ContentRow>
+      <div className="columns columns--grille">
+        <ContentRowImage size="is-one-third" image={main2.image}></ContentRowImage>
+        <ContentRow size="is-one-third" heading={main2.description1.heading} description={main2.description1.text} priority={3}></ContentRow>
+        <ContentRow size="is-one-third" heading={main2.description2.heading} description={main2.description2.text} priority={3}></ContentRow>
+        <ContentRow size="is-one-third" heading={main2.description3.heading} description={main2.description3.text} priority={3}></ContentRow>
+        <ContentRow size="is-one-third" heading={main2.description3.heading} description={main2.description3.text} priority={3}></ContentRow>
+
       </div>
 
 
