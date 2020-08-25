@@ -151,4 +151,6 @@ main2:
     heading: Placeholder
     text: Placeholder
   image: /img/avocat-thonon-les-bains.png
+  image1: /img/avocat-thonon-les-bains.png
+  image2: /img/slider1.jpg
 ---
