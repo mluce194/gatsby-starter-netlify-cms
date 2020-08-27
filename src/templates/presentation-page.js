@@ -45,11 +45,11 @@ export const PresentationPageTemplate = ({ image, heading, main1, main2 }) => (
 
 
       <div className="columns columns--grille">
-        <ContentRowImage size="is-one-third" image={main2.image}></ContentRowImage>
+        <ContentRowImage size="is-one-third" image={main2.image1}></ContentRowImage>
         <ContentRow size="is-one-third" heading={main2.description1.heading} description={main2.description1.text} priority={3}></ContentRow>
         <ContentRow size="is-one-third" heading={main2.description2.heading} description={main2.description2.text} priority={3}></ContentRow>
-        <ContentRow size="is-one-third" heading={main2.description3.heading} description={main2.description3.text} priority={3}></ContentRow>
-        <ContentRow size="is-one-third" heading={main2.description3.heading} description={main2.description3.text} priority={3}></ContentRow>
+        <ContentRow size="is-half" heading={main2.description3.heading} description={main2.description3.text} priority={3}></ContentRow>
+        <ContentRowImage size="is-half" image={main2.image2}></ContentRowImage>
 
       </div>
 
@@ -84,7 +84,8 @@ PresentationPageTemplate.propTypes = {
     }),
   }),
   main2: PropTypes.shape({
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     title: PropTypes.string,
     heading: PropTypes.string,
     description1: PropTypes.shape({
@@ -176,7 +177,14 @@ export const pageQuery = graphql`
           }
         }
         main2 {
-          image {
+          image1 {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          image2 {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid

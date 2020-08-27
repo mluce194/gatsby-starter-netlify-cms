@@ -22,24 +22,13 @@ export const ProductPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-1"
-          style={{
-            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-            backgroundColor: '#f40',
-            color: 'white',
-            padding: '1rem',
-          }}
-        >
+        className="is-size-1 bannerTitle">
           {title}
         </h1>
       </div>
-      <section className="section section--gradient">
-        <div className="columns">
-          <div className="column is-7 is-offset-1">
-            <h2 className="has-text-weight-semibold is-size-2">{heading}</h2>
-            <p>{description}</p>
-          </div>
-        </div>
+      <section>
+          <h2 className="titrePrincipal entete">{heading}</h2>
+    
         <div className="columns columns--ContentRow">
           <ContentRow description={main.description1.body} heading={main.description1.heading} size={"is-one-quarter"} />
           <ContentRowImage image={main.image1.image} size={"is-one-quarter"} />
