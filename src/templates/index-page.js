@@ -28,13 +28,13 @@ export const IndexPageTemplate = ({ heading, description, intro, main, contact }
             <div className="columns columns--ContentRow">
 
               <ContentRow heading={main.image1.heading} description={main.image1.body} size={"is-half"} />
-              <ContentRowImage image={main.image1} size={"is-half"}/>
+              <ContentRowImage image={main.image1.image} size={"is-half"}/>
             </div>
 
             <div className="columns columns--ContentRow">
 
               <ContentRow heading={main.image2.heading} description={main.image2.body} size={"is-half"}/>
-              <ContentRowImage image={main.image2}  size={"is-half"}/>
+              <ContentRowImage image={main.image2.image}  size={"is-half"}/>
 
             </div>
             <Contact contact={contact} />

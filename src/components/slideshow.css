@@ -37,8 +37,5 @@
   text-align: center;
 }
 
-.column.is-one-third:nth-child(even) {
-  background-color: #C4C4C4;
-}
 
 

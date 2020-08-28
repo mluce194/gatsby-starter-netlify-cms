@@ -6,8 +6,8 @@ const Contact = (props) => (
   <section className="blocContact">
     <div>{console.log("Mes données")}</div>
     <div class="columns">
-      <div class="column is-one-third blocContact__adresse">
-        <strong>Nous contacter</strong>
+      <div class="column column--contenu is-one-third blocContact__adresse">
+        <h3 className="entete">Nous contacter</h3>
         <p>{props.contact}</p>
       </div>
       <div class="column is-two-thirds blocContact__map">

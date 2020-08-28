@@ -6,6 +6,7 @@ $kaldi-red: #800000
 $kaldi-red-invert: #fff
 $medium-grey: #ECECEC
 $link: #800000
+$grey: #cecece
 
 
 $primary: $kaldi-red
@@ -15,6 +16,10 @@ $black: #2b2523
 
 * 
   font-family: "Montserrat", Times, serif;
+  font-weight: 300;
+
+a 
+  font-weight: 400;
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -42,7 +47,7 @@ $black: #2b2523
   position: relative
   left: 50%
   right: 50%
-  margin: 2em -50vw
+  margin: 0 -50vw
   background-size: cover
   background-position: bottom
   display: flex
@@ -138,20 +143,62 @@ $menu-label-color: $white-ter
 .navbar.menu--grey
   background-color: $medium-grey;
 
-
-
 @import "~bulma"
 
-.column
-  padding-bottom: 0
+.bannerTitle, h1.bannerTitle
+    background-color: $kaldi-red;
+    color: white;
+    padding: 1rem;
 
-.columns:last-child
-  margin-bottom: 0
+.entete, h2.entete, h3.entete
+    text-transform: uppercase;
+    color: $kaldi-red;
+    font-size: 2rem;
+
+.titrePrincipal, h2.titrePrincipal
+    color: $black
+
+h2.titrePrincipal
+    padding: 5rem 0 5rem 2rem;
+    font-weight: 100;
+    font-size: 2.8rem;
+    background-color: $medium-grey;
+    text-transform: initial;
+
+.entete::before
+    content: "-- ";
+
+
+.column
+  padding: 0;
+
+.columns 
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  flex-wrap: wrap;
+
+.columns, .columns:last-child, .columns:not(:last-child)
+  margin-bottom: 0;
 
 
 .is-half:nth-child(even)
     padding: 2rem;
-    
+
+
+.content h2 
+  margin-bottom: 0;
+
+.content h2:not(:first-child)
+  margin-top: 0;
+
+.columns--grille .column:nth-child(odd)
+  background-color: $kaldi-red;
+  color: $kaldi-red-invert;
+
+.columns--grille .column:nth-child(odd) .entete
+  color: $kaldi-red-invert;
+
 
 // responsiveness
 +tablet-only

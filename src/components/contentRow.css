@@ -16,25 +16,18 @@
 
 }
 
+.columns--ContentRow:nth-child(even) .entete {
+    color: #fff;
+}
+
 .column--image {
     background-size: cover;
     min-height: 20rem;
 }
 
-.entete--accueil {
-    text-transform: uppercase;
-    color: #800000;
-    font-size: 2rem;
+.column--contenu {
+    padding: 5rem;
 }
 
-.content h2.entete--accueil {
-    color: #800000;
-}
 
-.entete--accueil::before {
-    content: "-- ";
-}
 
-.columns:nth-child(even) .entete--accueil {
-    color: #fff;
-}

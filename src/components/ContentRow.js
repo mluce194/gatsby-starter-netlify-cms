@@ -1,15 +1,32 @@
 import React from 'react'
 
-const ContentRow = (props) => (
+const ContentRow = class extends React.Component {
 
-  <div className={`column ${props.size}`}>
-    <h2 className="has-text-weight-semibold entete--accueil">
-      {props.heading}
-    </h2>
-    <p>{props.description}</p>
-  </div>
+  render() {
 
-)
+    const ContentRowHeading = `h${this.props.priority}`;
+
+    return (
+
+      <div className={`column column--contenu ${this.props.size}`}>
+        <ContentRowHeading className="has-text-weight-semibold entete">
+          {this.props.heading}
+        </ContentRowHeading>
+        <p>{this.props.description}</p>
+      </div>
+    )
+
+  }
+
+ 
+
+}
+
+ContentRow.defaultProps = {
+  priority: 1
+}
+
+
 
 
 
