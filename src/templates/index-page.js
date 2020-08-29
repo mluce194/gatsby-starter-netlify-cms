@@ -25,13 +25,13 @@ export const IndexPageTemplate = ({ heading, description, intro, main, contact }
       <div className="section" style={{ padding: 0 }}>
         <div className="columns">
           <div className="content">
-            <div className="columns columns--ContentRow">
+            <div className="columns columns--lignes">
 
               <ContentRow heading={main.image1.heading} description={main.image1.body} size={"is-half"} />
               <ContentRowImage image={main.image1.image} size={"is-half"}/>
             </div>
 
-            <div className="columns columns--ContentRow">
+            <div className="columns columns--lignes">
 
               <ContentRow heading={main.image2.heading} description={main.image2.body} size={"is-half"}/>
               <ContentRowImage image={main.image2.image}  size={"is-half"}/>

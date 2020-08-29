@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import ContentRow from '../components/ContentRow'
-import ContentRowImage from '../components/ContentRowImage'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import ContentRow from "../components/ContentRow";
+import ContentRowImage from "../components/ContentRowImage";
 
 export const ProductPageTemplate = ({
   image,
@@ -12,48 +12,72 @@ export const ProductPageTemplate = ({
   description,
   main,
 }) => (
-    <div className="content">
-      <div
-        className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            })`,
-        }}
-      >
-        <h1
-        className="is-size-1 bannerTitle">
-          {title}
-        </h1>
-      </div>
-      <section>
-          <h2 className="titrePrincipal entete">{heading}</h2>
-    <p>{description}</p>
-        <div className="columns columns--grille">
-        <ContentRowImage image={main.image2.image} size={"is-one-third"} />
-
-          <ContentRow description={main.description1.body} heading={main.description1.heading} size={"is-one-third"} />
-          <ContentRow description={main.description2.body} heading={main.description2.heading} size={"is-one-third"} />
-
-
-          <ContentRow description={main.description3.body} heading={main.description3.heading} size={"is-one-third"} />
-          <ContentRow description={main.description4.body} heading={main.description4.heading} size={"is-one-third"} />
-          <ContentRowImage image={main.image2.image} size={"is-one-third"} />
-
-        <ContentRowImage image={main.image2.image} size={"is-one-third"} />
-
-          <ContentRow description={main.description5.body} heading={main.description5.heading} size={"is-one-third"} />
-          <ContentRow description={main.description6.body} heading={main.description6.heading} size={"is-one-third"} />
-  
-
-          <ContentRow description={main.description7.body} heading={main.description7.heading} size={"is-half"} />
-          <ContentRowImage image={main.image2.image} size={"is-half"} />
-        </div>
-
-
-      </section>
+  <div className="content">
+    <div
+      className="full-width-image-container margin-top-0"
+      style={{
+        backgroundImage: `url(${
+          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        })`,
+      }}
+    >
+      <h1 className="is-size-1 bannerTitle">{title}</h1>
     </div>
-  )
+    <section>
+      <div >
+        <h2 className="titrePrincipal entete">{heading}</h2>
+
+        <p>{description}</p>
+      </div>
+      <div className="columns columns--grille">
+        <ContentRowImage image={main.image2.image} size={"is-one-third"} />
+
+        <ContentRow
+          description={main.description1.body}
+          heading={main.description1.heading}
+          size={"is-one-third"}
+        />
+        <ContentRow
+          description={main.description2.body}
+          heading={main.description2.heading}
+          size={"is-one-third"}
+        />
+
+        <ContentRow
+          description={main.description3.body}
+          heading={main.description3.heading}
+          size={"is-one-third"}
+        />
+        <ContentRow
+          description={main.description4.body}
+          heading={main.description4.heading}
+          size={"is-one-third"}
+        />
+        <ContentRowImage image={main.image2.image} size={"is-one-third"} />
+
+        <ContentRowImage image={main.image2.image} size={"is-one-third"} />
+
+        <ContentRow
+          description={main.description5.body}
+          heading={main.description5.heading}
+          size={"is-one-third"}
+        />
+        <ContentRow
+          description={main.description6.body}
+          heading={main.description6.heading}
+          size={"is-one-third"}
+        />
+
+        <ContentRow
+          description={main.description7.body}
+          heading={main.description7.heading}
+          size={"is-half"}
+        />
+        <ContentRowImage image={main.image2.image} size={"is-half"} />
+      </div>
+    </section>
+  </div>
+);
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -68,10 +92,10 @@ ProductPageTemplate.propTypes = {
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
-}
+};
 
 const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -83,8 +107,8 @@ const ProductPage = ({ data }) => {
         main={frontmatter.main}
       />
     </Layout>
-  )
-}
+  );
+};
 
 ProductPage.propTypes = {
   data: PropTypes.shape({
@@ -92,9 +116,9 @@ ProductPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default ProductPage
+export default ProductPage;
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
@@ -171,8 +195,7 @@ export const productPageQuery = graphql`
             }
           }
         }
-
       }
     }
   }
-`
+`;
