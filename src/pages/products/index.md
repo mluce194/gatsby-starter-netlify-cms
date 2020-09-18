@@ -129,8 +129,8 @@ main:
 
           * Litige entre acheteur et vendeur d’immeuble
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    alt: Avocat Thonon-les-Bains immobilier
+    image: /img/avocat-thonon-les-bains-immobilier.jpg
   description2:
     heading: Mesure d'exécution et saisie immobilière
     body: |-
@@ -141,8 +141,8 @@ main:
       * Nantissement
       * [Vente aux enchères](http://beraudo.com/ventes-judiciaires.php)
   image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    alt: Avocat Thonon-les-Bains droit de la famille
+    image: /img/avocat-thonon-les-bains-droit-famille.jpg
   description3:
     heading: Défense pénale
     body: >-
@@ -158,8 +158,8 @@ main:
 
       * Contentieux de l’indemnisation des préjudices
   image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+    alt: Avocat Thonon-les-Bains droit des affaires
+    image: /img/avocat-thonon-les-bains-droit-affaires.jpg
   description4:
     heading: Affaires familiales
     body: |-
@@ -174,6 +174,9 @@ main:
       * Liquidation de communauté et partage
       * Mesure de protection de l’enfant
       * Filiation et adoption
+  image4:
+    image: /img/bookcase-335849_640.jpg
+    alt: Avocat Thonon-les-Bains droit de la responsabilité
   description5:
     heading: Droit des affaires
     body: |-
